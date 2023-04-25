@@ -1,0 +1,261 @@
+.invoice-form {
+
+    .invoice-details {
+        width: 85%;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+
+        .invoice-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            select {
+                color: #8431F7;
+                border: none;
+                font-weight: 600;
+                font-size: 16px;
+                margin-left: 10px;
+
+                option {
+                    font-weight: 600;
+                    font-size: 16px;
+                    border: none;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .invoice-middle {
+            display: flex;
+            margin-bottom: 20px;
+
+            label {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    width: 295px;
+                    height: 35px;
+                    background-color: #F6F1F1;
+                    border-radius: 8px;
+                    border: none;
+                    margin-right: 48px;
+                    padding: 0 10px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .invoice-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            label {
+                display: flex;
+                flex-direction: column;
+
+                textarea {
+                    resize: none;
+                    width: 550px;
+                    height: 120px;
+                    padding: 10px;
+                    background-color: #F6F1F1;
+                    border-radius: 8px;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .invoice-price {
+        width: 85%;
+        min-height: 400px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: none;
+            border-radius: 8px;
+
+            thead {
+                tr {
+                    border-radius: 20px;
+
+                    th {
+                        text-align: left;
+                        padding: 10px;
+                        background-color: #5D3891;
+                        color: #F5F5F5;
+                        border-bottom: 1px solid #FFEAEA;
+
+                        &:first-child {
+                            width: 45%;
+                        }
+
+                        &:nth-child(2) {
+                            width: 10%;
+                        }
+
+                        &:nth-child(3) {
+                            width: 20%;
+                        }
+
+                        &:last-child {
+                            width: 20%;
+                        }
+
+                        &:last-child {
+                            width: 5%;
+                        }
+                    }
+                }
+            }
+
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #EDEDED;
+
+                input {
+                    width: 100%;
+                    height: 35px;
+                    background-color: #F6F1F1;
+                    border-radius: 8px;
+                    border: none;
+                    padding: 0 10px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                button {
+                    height: 35px;
+                    background-color: transparent;
+                    border: none;
+                    color: #E74646;
+                    font-weight: 600;
+                    font-size: 16px;
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:hover {
+                        color: darken($color: #E74646, $amount: 25%);
+                    }
+                }
+            }
+        }
+
+        .add_total-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+
+            button {
+                height: 35px;
+                background-color: transparent;
+                border: none;
+                color: #5D3891;
+                font-size: 16px;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    color: lighten($color: #5D3891, $amount: 25%);
+                }
+            }
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #5D3891;
+                color: #F5F5F5;
+                border-radius: 8px;
+                padding: 10px;
+
+                span {
+                    margin-right: 10px;
+                    width: 50px;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .note {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            label {
+                display: flex;
+                flex-direction: column;
+
+                textarea {
+                    resize: none;
+                    width: 400px;
+                    height: 120px;
+                    padding: 10px;
+                    background-color: #F6F1F1;
+                    border-radius: 8px;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .invoice-price__btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            button {
+                height: 35px;
+                background-color: #5D3891;
+                border: none;
+                color: #F5F5F5;
+                border-radius: 8px;
+                padding: 0 20px;
+                cursor: pointer;
+                padding: 0 50px;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    background-color: lighten($color: #5D3891, $amount: 25%);
+                }
+            }
+        }
+    }
+}
